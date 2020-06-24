@@ -1,0 +1,30 @@
+@mixin df-position($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin ptl-position($pt, $pl) {
+    padding-top: $pt;
+    padding-left: $pl;
+}
+
+@mixin ptr-position($pt, $pr) {
+    padding-top: $pt;
+    padding-right: $pr;
+}
+
+@mixin mtl-position($mt, $ml) {
+    margin-top: $mt;
+    margin-left: $ml;
+}
+
+@mixin mtr-position($mt, $mr) {
+    margin-top: $mt;
+    margin-right: $mr;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
