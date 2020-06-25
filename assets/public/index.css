@@ -63,18 +63,18 @@ table {
   justify-content: space-between;
   align-items: center;
   width: 800px;
-  height: 600px;
+  height: auto;
   padding: 70px 75px;
   margin: 0 auto;
   background-image: url("../public/img/bg.jpg");
 }
 .section .container-table {
   width: 250px;
-  height: 460px;
+  height: auto;
   background-color: #ffffff;
 }
 .section .container-table .container-table__widget {
-  padding-top: 38px;
+  padding-top: 50px;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
@@ -183,6 +183,69 @@ table {
 }
 .section .container-widget__bg-img {
   width: 400px;
-  height: 460px;
-  background-color: red;
+  height: auto;
+  background-image: url("../public/img/2.jpg");
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.section .container-widget__name {
+  margin-top: 0;
+  margin-left: 170px;
+  padding-top: 30px;
+}
+.section .container-widget__name .name-city > p {
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.19;
+  letter-spacing: -1px;
+  color: #507998;
+}
+.section .container-widget__name .name-state {
+  padding-left: 110px;
+}
+.section .container-widget__name .name-state > p {
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.71429px;
+  color: #98c6e8;
+}
+.section .container-widget__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+}
+.section .container-widget__info .info-today__time > p {
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.555556px;
+  color: #ffffff;
+}
+.section .container-widget__info .info-today__date > p {
+  font-family: "ABeeZee";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+}
+.section .container-widget__info .info-temp > p {
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 118px;
+  letter-spacing: -7px;
+  color: #ffffff;
 }

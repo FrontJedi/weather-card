@@ -3,18 +3,18 @@
 
 .section {
     @include df-position(space-between, center);
-    @include size(800px, 600px);
+    @include size(800px, auto);
     padding: 70px 75px;
     margin: 0 auto;
     background-image: url("../public/img/bg.jpg");
 
     .container-table {
         // @include df-position(space-between, center);
-        @include size(250px, 460px);
+        @include size(250px, auto);
         background-color: #ffffff;
 
         .container-table__widget {
-            @include ptl-position(38px, 0);
+            @include ptl-position(50px, 0);
             @include df-position(space-between, center);
             flex-direction: column;
 
@@ -131,8 +131,86 @@
 
     .container-widget {
         &__bg-img {
-            @include size(400px, 460px);
-            background-color: red;
+            @include size(400px, auto);
+            background-image: url("../public/img/2.jpg");
+            padding-left: 25px;
+            padding-right: 20px;
+        }
+
+        &__name {
+            @include mtl-position(0, 170px);
+            padding-top: 30px;
+
+            .name-city {
+                & > p {
+                    font-family: "ABeeZee";
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 36px;
+                    line-height: 1.19;
+                    letter-spacing: -1px;
+                    color: #507998;
+                }
+            }
+
+            .name-state {
+                padding-left: 110px;
+
+                & > p {
+                    font-family: "ABeeZee";
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 2;
+                    letter-spacing: 1.71429px;
+                    color: #98c6e8;
+                }
+            }
+        }
+
+        &__info {
+            @include df-position(space-between, center);
+            margin-top: 200px;
+
+            .info-today {
+                &__time {
+                    & > p {
+                        font-family: "ABeeZee";
+                        font-style: italic;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 1.2;
+                        letter-spacing: -0.555556px;
+                        color: #ffffff;
+                    }
+                }
+
+                &__date {
+                    & > p {
+                        font-family: "ABeeZee";
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 21px;
+                        letter-spacing: -0.5px;
+                        color: #ffffff;
+                        mix-blend-mode: normal;
+                        opacity: 0.85;
+                    }
+                }
+            }
+
+            .info-temp {
+                & > p {
+                    font-family: "ABeeZee";
+                    font-style: italic;
+                    font-weight: normal;
+                    font-size: 100px;
+                    line-height: 118px;
+                    letter-spacing: -7px;
+                    color: #ffffff;
+                }
+            }
         }
     }
 }
