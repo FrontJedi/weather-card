@@ -181,6 +181,9 @@ table {
   line-height: 1.16;
   color: #4f4f4f;
 }
+.section .container-table__info .info__weather-box .qw {
+  padding-bottom: 30px;
+}
 .section .container-widget__bg-img {
   width: 400px;
   height: auto;
@@ -190,7 +193,7 @@ table {
 }
 .section .container-widget__name {
   margin-top: 0;
-  margin-left: 170px;
+  margin-left: 140px;
   padding-top: 30px;
 }
 .section .container-widget__name .name-city > p {
@@ -213,6 +216,7 @@ table {
   line-height: 2;
   letter-spacing: 1.71429px;
   color: #98c6e8;
+  text-transform: uppercase;
 }
 .section .container-widget__info {
   display: flex;
